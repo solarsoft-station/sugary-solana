@@ -4,7 +4,7 @@ sidebar_label: "How to set up a Minting UI"
 
 # A Front End Minting Experience
 
-:::info
+:bangbang:
 
 This guide assumes you have already uploaded and deployed your Candy Machine. 
 If you haven't yet done this, check out [Sugar CLI](/developer-tools/sugar/) to get started!
@@ -39,7 +39,7 @@ Open the file `.env.example` located at the root of the new folder `~/candy-mach
     ```
 - Once your `REACT_APP_CANDY_MACHINE_ID` has been updated. Rename `.env.example` to `.env`
 
-:::warning
+:bangbang:
 
 The public RPC endpoints (`https://api.mainnet-beta.solana.com` and `https://api.devnet.solana.com`) are not suitable
 for Candy Machine mints and may cause significant issues to your minting site. We **strongly** recommend that you use a
@@ -51,7 +51,7 @@ After these changes are made, run the command `yarn install && yarn start` insid
 folder `~/metaplex/js/packages/candy-machine-ui`. This will start a local server with a front end experience. From here,
 you should customize the mint page and deploy it in your host service.
 
-:::warning
+:bangbang:
 
 We **strongly** recommend that you keep the standard implementation for the mint button functionality when using
 captcha (`gatekeeper`) settings. This will guarantee that the captcha tokens are issued at the correct time (e.g., after
@@ -71,39 +71,39 @@ used.
 
 Before `goLiveDate` is reached:
 
-![Mint Countdown](/assets/candy-machine-ui/Mint-1.png#radius#shadow)
+![Mint Countdown](assets/candy-machine-ui/Mint-1.png#radius#shadow)
 
 When mint is live:
 
-![Mint Live](/assets/candy-machine-ui/Mint-2.png#radius#shadow)
+![Mint Live](assets/candy-machine-ui/Mint-2.png#radius#shadow)
 
 ### Whitelist Mint
 
 Whitelist token not detected, mint is not active before `goLiveDate`:
 
-![Whitelist + No Token](/assets/candy-machine-ui/Whitelist-1.png#radius#shadow)
+![Whitelist + No Token](assets/candy-machine-ui/Whitelist-1.png#radius#shadow)
 
 Whitelist token detected and whitelist settings set to presale and discount price:
 
-![Whitelist Presale + Discount](/assets/candy-machine-ui/Whitelist-2.png#radius#shadow)
+![Whitelist Presale + Discount](assets/candy-machine-ui/Whitelist-2.png#radius#shadow)
 
 Whitelist only mint:
 
-![Whitelist Only](/assets/candy-machine-ui/Whitelist-3.png#radius#shadow)
+![Whitelist Only](assets/candy-machine-ui/Whitelist-3.png#radius#shadow)
 
 Whitelist + presale and `goLiveDate` set to `null`:
 
-![Whitelist + No Token](/assets/candy-machine-ui/Whitelist-4.png#radius#shadow)
+![Whitelist + No Token](assets/candy-machine-ui/Whitelist-4.png#radius#shadow)
 
 ### End Settings Mint
 
 Countdown to the end of the mint:
 
-![End Settings](/assets/candy-machine-ui/EndSettings-1.png#radius#shadow)
+![End Settings](assets/candy-machine-ui/EndSettings-1.png#radius#shadow)
 
 End settings `date` reached, mint stopped:
 
-![End Settings Complete](/assets/candy-machine-ui/EndSettings-2.png#radius#shadow)
+![End Settings Complete](assets/candy-machine-ui/EndSettings-2.png#radius#shadow)
 
 
 ## REFERENCES
