@@ -1,13 +1,13 @@
 ---
-sidebar_label: "How to set up a Minting UI"
+"How to set up a Minting UI"
 ---
 
 # A Front End Minting Experience
 
 :bangbang:
 
-This guide assumes you have already uploaded and deployed your Candy Machine. 
-If you haven't yet done this, check out [Sugar CLI](/developer-tools/sugar/) to get started!
+> This guide assumes you have already uploaded and deployed your Candy Machine. 
+> If you haven't yet done this, check out [Sugar CLI](/developer-tools/sugar/) to get started!
 
 :::
 
@@ -53,7 +53,7 @@ you should customize the mint page and deploy it in your host service.
 
 :bangbang:
 
-We **strongly** recommend that you keep the standard implementation for the mint button functionality when using
+> We **strongly** recommend that you keep the standard implementation for the mint button functionality when using
 captcha (`gatekeeper`) settings. This will guarantee that the captcha tokens are issued at the correct time (e.g., after
 the mint begins). The `CMv2` is designed to reject captcha tokens that are created before the mint is live to avoid bots
 pre-solving captchas - your transaction will fail if the token is created at the wrong time.
